@@ -4,16 +4,20 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -24,10 +28,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 a {
@@ -35,8 +39,25 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+ul li{
+  list-style: none;
+}
+
+section {
+  padding: 20px 0;
+}
+
+/* header styling */
+
+.hgroup-wrap {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
 }
