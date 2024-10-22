@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
             <div className="container">
                 <div className="hgroup-wrap">
                     <div className="site-logo">
-                        <span>PLC</span>
+                        <Link href='/'>PLC</Link>
                     </div>
                     <Navbar/>
                 </div>

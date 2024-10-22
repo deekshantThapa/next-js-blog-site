@@ -4,8 +4,8 @@ const Navbar = () => {
     return (
         <nav>
             <ul>
-                <Link href='/about'>About</Link>
-                <li>Contact</li>
+                <li><Link href='/about'>About</Link></li>
+                <li><Link href='/contact'>Contact</Link></li>
             </ul>
         </nav>
     );

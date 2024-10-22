@@ -1,18 +1,18 @@
-// import localFont from "next/font/local";
-import Header from "@/components/header";
+// fonts
+import { Nunito } from 'next/font/google';
+
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: 'normal'
+});
+
+// style
 import "./style.css";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+// components
+import Header from "@/components/Header";
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: "premier league clubs",
@@ -22,9 +22,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Header/>
-        {children}
+      <body className={nunito.className}>
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
