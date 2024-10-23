@@ -66,7 +66,7 @@ h6{
 }
 
 .container{
-  max-width: 1170px;
+  max-width: 1000px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -75,18 +75,51 @@ a {
   color: var(--primary);
   text-decoration: none;
   transition: all 0.3s linear 0s;
+  display: inline-block;
 }
 
 a:hover{
   color: var(--hover-color);
 }
 
+.btn-primary {
+  border: none;
+  background: var(--accent-color);
+  color: var(--white);
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+}
+
+.btn-primary:hover{
+  color: var(--white);
+  background: var(--hover-color);
+}
+
 ul li{
   list-style: none;
 }
 
+p, li{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
 section {
   padding: 20px 0;
+}
+
+.entry-header{
+  padding-bottom: 10px;
+}
+
+.btn-wrap {
+  text-align: center;
+}
+
+.go-back{
+  margin-bottom: 20px;
 }
 
 /* header */
@@ -110,6 +143,10 @@ nav ul {
   gap: 15px;
 }
 
+nav li{
+  margin-bottom: 0;
+}
+
 nav a{
   font-size: 18px;
 }
@@ -124,9 +161,69 @@ nav a{
   font-weight: 700;
   color: var(--accent-color);
 }
+
+.blog-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-item h4 {
+  margin-bottom: 5px;
+}
+
+.blog-item .blog-number {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.blog-item .entry-meta span {
+  padding: 0 6px;
+}
+
+.blog-item .entry-meta span:first-child{
+  padding-left: 0;
+}
+
+.blog-item .entry-meta span:last-child{
+  padding-right: 0;
+}
+
+.blog-item .entry-date{
+  font-size: 15px;
+}
+
+.single-blog-detail .author-name span {
+  font-style: italic;
+}
+
+.blog-item .entry-meta{
+  margin-bottom: 12px;
+}
+
+.blog-item .read-more {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.blog-item .read-more:hover{
+  color: var(--hover-color);
+}
+
+.single-blog-detail .blog-item h4 {
+  margin-bottom: 10px;
+}
+
 /* footer */
 
-footer span {
+.footer-content{
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-content span {
   font-style: italic;
   text-align: center;
   display: block;
