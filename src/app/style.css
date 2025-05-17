@@ -177,28 +177,19 @@ nav a{
   font-weight: 600;
 }
 
-.blog-item .entry-meta span {
-  padding: 0 6px;
+.blog-list-wrap .reactions-and-views {
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
-.blog-item .entry-meta span:first-child{
-  padding-left: 0;
+.blog-list-wrap .reactions-and-views span:first-child {
+  margin-right: 10px;
 }
 
-.blog-item .entry-meta span:last-child{
-  padding-right: 0;
-}
-
-.blog-item .entry-date{
-  font-size: 15px;
-}
-
-.single-blog-detail .author-name span {
+.blog-list-wrap .reactions-and-views .views {
+  display: block;
+  padding-top: 2px;
   font-style: italic;
-}
-
-.blog-item .entry-meta{
-  margin-bottom: 12px;
 }
 
 .blog-item .read-more {

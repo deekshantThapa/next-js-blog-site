@@ -3,7 +3,7 @@ const Footer = () => {
         <footer>
             <div className="container">
                 <div className="footer-content">
-                    <span>Copyright @ 2024 Dkshant</span>
+                    <span>This is a footer content</span>
                 </div>
             </div>
         </footer>

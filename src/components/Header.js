@@ -7,7 +7,7 @@ const Header = () => {
             <div className="container">
                 <div className="hgroup-wrap">
                     <div className="site-logo">
-                        <Link href='/'>PLC</Link>
+                        <Link href='/'>Next</Link>
                     </div>
                     <Navbar/>
                 </div>
